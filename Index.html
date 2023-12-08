@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Personal portofolio website</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div id="Header">
+        <div class="container">
+            <nav>
+                <img src="Images/Logo.png" class="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="row">
+                <div class="header-text">
+                    <p>Software Developer</p>
+                    <h1>Hi, I'm <span>Mahmoud</span><br>El-Sayed from Egypt</h1>
+                </div>
+                <div class="about-col-0">
+                    <img src="Images/Me1.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------About----------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/Me.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Passoinate software engineer with a little Experience in 
+                        website development, application development using different 
+                        frame works and tools and other fields like game 
+                        programming, and slight experience in Machine learning and data 
+                        analysis field.
+                    </p>
+
+                        <div class="tab-titles">
+                            <p class ="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class ="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class ="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>Web development</span><br>Web app development</li>
+                                <li><span>Mobile development</span><br>App development using flutter</li>
+                                <li><span>Problem solving</span><br>3 months preparation kit - Hackerrank</li>
+                                <li><span>Databases</span><br>MSSQL Server</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>April 2022 – July 2022</span><br>Gmind : Game developer Intern using C sharp.</li>
+                                <li><span>August 2022 – Oct 2022</span><br>Alexandria ShipYard : Intern.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2019 - 2023</span><br>Faculty of Science (Software Industry and Multimedia Department).</li>
+                                <li><span>August 2022</span><br>ITI Linux System Adminstartion Certificate.</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-----------Portfolio-------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/blog.png" >
+                <div class="layer">
+                    <h3>Pocket trainer application (graduation project)</h3>
+                    <p>recommends training and nutrition plans for the users.</p>
+                    <a href="https://github.com/Mahmoudelsayed5"><i class="fa-solid fa-arrow-up-right-from-square"></i>></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/blog.png" >
+                <div class="layer">
+                    <h3>Currency recognition system</h3>
+                    <p>Machine learning model recognizes the currency when taking a picture of it.</p>
+                    <a href="https://github.com/Mahmoudelsayed5"><i class="fa-solid fa-arrow-up-right-from-square"></i>></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/blog.png" >
+                <div class="layer">
+                    <h3>Smart health system</h3>
+                    <p>Helps patients find the doctors they need, and helps doctors follow up with their patients.</p>
+                    <a href="https://github.com/Mahmoudelsayed5"><i class="fa-solid fa-arrow-up-right-from-square"></i>></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/blog.png" >
+                <div class="layer">
+                    <h3>Marvel application</h3>
+                    <p>Marvel comics android application.</p>
+                    <a href="https://github.com/Mahmoudelsayed5"><i class="fa-solid fa-arrow-up-right-from-square"></i>></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/blog.png" >
+                <div class="layer">
+                    <h3>Chatting application</h3>
+                    <p>Java project for chatting using swing and socket programming.</p>
+                    <a href="https://github.com/Mahmoudelsayed5"><i class="fa-solid fa-arrow-up-right-from-square"></i>></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/blog.png" >
+                <div class="layer">
+                    <h3>Pac-Man game using unity</h3>
+                    <p>Player collects coins and an enemy runs after him.</p>
+                    <a href="https://github.com/Mahmoudelsayed5"><i class="fa-solid fa-arrow-up-right-from-square"></i>></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!------------Contact----------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>contact@example.com</p>
+                <p>01551554816</p>
+                <a href="Images/MyResume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message" ></textarea>
+                    <button class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright Mahmoud - 2023</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+
+</body>
+</html>
